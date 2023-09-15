@@ -10,7 +10,7 @@ import humidity_icon from '../assets/humidity.png';
 
 export const WeatherApp = () => {
 
-    let api_key = "be4adac0927338d30895f60fe22f0a58";
+    let api_key = "";
 
     const search = async () => {
         const element = document.getElementsByClassName("cityInput")
