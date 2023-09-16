@@ -31,6 +31,10 @@ export const WeatherApp = () => {
         }
     };
 
+    const handleInputSearch = (e) => {
+        setCity(e.target.value)
+    }
+
     return (
         <div className='container'>
             <div className="top-bar">
@@ -39,7 +43,7 @@ export const WeatherApp = () => {
                     className="cityInput"
                     placeholder='Search'
                     value={city}
-                    onChange={(e) => setCity(e.target.value)}
+                    onChange={handleInputSearch}
                 />
                 <div className="search-icon" onClick={() => { search() }}>
                     <img src={search_icon} alt="" />
